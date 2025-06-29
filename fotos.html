@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Fotos - Clan of Sparrows</title>
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&family=Special+Elite&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body style="background-image: url('img/Cos_Logo_2.png'); background-repeat: no-repeat; background-position: center; background-size: 200px; background-attachment: fixed;">
+  <header>
+    <img src="img/Cos_Logo.png" alt="Clan of Sparrows Logo" style="max-width: 300px; height: auto;">
+  </header>
+ 
+<nav>
+  <a href="index.html">Home</a>
+    <a href="origem.html">A Origem</a>
+  <a href="integrantes.html">Integrantes</a>
+  <a href="musica.html">Música</a>
+  <a href="fotos.html">Fotos</a>
+  <a href="agenda.html">Agenda</a>
+  <a href="contato.html">Contato</a>
+</nav>
+
+<section>
+
+<script>
+  function openModal(img) {
+    const modal = document.getElementById("modal");
+    const modalImg = document.getElementById("modalImage");
+    modal.style.display = "block";
+    modalImg.src = img.src;
+  }
+
+  function closeModal() {
+    document.getElementById("modal").style.display = "none";
+  }
+</script>
+
+  <h2>Fotos</h2>
+  <div class="gallery">
+    <img src="img/foto1.jpg" alt="Foto 1" onclick="openModal(this)">
+    <img src="img/foto2.jpg" alt="Foto 2" onclick="openModal(this)">
+    <img src="img/foto4.jpg" alt="Foto 4" onclick="openModal(this)">
+  </div>
+
+  <!-- Modal para visualização ampliada -->
+
+  <div id="modal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+  </div>
+
+<br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+</p>
+
+  </section>
+  <footer>&copy; 2025 Clan of Sparrows. Todos os direitos reservados.</footer>
+</body>
+</html>
